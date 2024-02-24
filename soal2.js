@@ -64,6 +64,7 @@ source=9.67.116.98:8000] ceased
 03/22 08:54:53 INFO   :.....terminator: process terminated with exit code 0`
 
 fs.writeFile('log.txt', payload, (err) => {
+    console.log("\nWriting files...");
     if (err) {
         console.log(err);
         return;
@@ -74,6 +75,7 @@ fs.writeFile('log.txt', payload, (err) => {
 
 // Read File
 fs.readFile('log.txt', 'utf8', (err, data) => {
+    console.log("\nReading files...");
     if (err) {
         console.log(err);
         return;

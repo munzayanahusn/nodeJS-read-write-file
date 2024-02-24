@@ -1,17 +1,33 @@
 // Square-Rectangle Area-Perimeter Calculation
-
-exports.squareArea = function(side){
+const squareArea = function(side){
     return side * side;
 }
 
-exports.rectangleArea = function(length, width){
-    return length * width;
+const rectangleArea = function(height, width){
+    return height * width;
 }
 
-exports.squarePerimeter = function(side){
+const squarePerimeter = function(side){
     return 4 * side;
 }
 
-exports.rectanglePerimeter = function(length, width){
-    return 2 * (length + width);
+const rectanglePerimeter = function(height, width){
+    return 2 * (height + width);
+}
+
+// General formula for area and perimeter
+const area = function(height, width){
+    return width * height;
+}
+const perimeter = function(height, width){
+    return 2 * (width + height);
+}
+
+module.exports = {
+    squareArea,
+    squarePerimeter,
+    rectangleArea,
+    rectanglePerimeter,
+    area,
+    perimeter
 }
